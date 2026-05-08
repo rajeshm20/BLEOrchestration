@@ -1,9 +1,3 @@
-# BLE Connection Orchestration Engine (CoreBluetooth, iOS 15) — Design
-
-**Date:** 2026-05-08  
-**Target:** iOS 15+  
-**Primary goals:** Maintain stable concurrent connections (10+ wearables), reconnection resilience, high packet throughput under mixed device capabilities, strong isolation and determinism via actors, CoreBluetooth delegate isolation, and background restoration via `CBCentralManagerOptionRestoreIdentifierKey`.
-
 ## Install with Swift Package Manager
 
 ### Xcode
@@ -29,6 +23,15 @@ Then add the product to your target dependencies:
     branch: "main"
 )
 ```
+---
+
+
+
+# BLE Connection Orchestration Engine (CoreBluetooth, iOS 15) — Design
+
+**Date:** 2026-05-08  
+**Target:** iOS 15+  
+**Primary goals:** Maintain stable concurrent connections (10+ wearables), reconnection resilience, high packet throughput under mixed device capabilities, strong isolation and determinism via actors, CoreBluetooth delegate isolation, and background restoration via `CBCentralManagerOptionRestoreIdentifierKey`.
 ---
 
 ## 1. Scope
