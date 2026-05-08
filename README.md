@@ -4,6 +4,31 @@
 **Target:** iOS 15+  
 **Primary goals:** Maintain stable concurrent connections (10+ wearables), reconnection resilience, high packet throughput under mixed device capabilities, strong isolation and determinism via actors, CoreBluetooth delegate isolation, and background restoration via `CBCentralManagerOptionRestoreIdentifierKey`.
 
+## Install with Swift Package Manager
+
+### Xcode
+
+1. In Xcode, go to **File > Add Package Dependencies...**
+2. Enter this repository URL.
+3. Select the version you want to use.
+4. Add `BLEorchestration` to your app target.
+
+### Package.swift
+
+```swift
+dependencies: [
+  .package(url: "https://github.com/rajeshm20/BLEOrchestration.git")
+]
+```
+
+Then add the product to your target dependencies:
+
+```swift
+.package(
+    url: "https://github.com/yourname/bleorchestration.git",
+    branch: "main"
+)
+```
 ---
 
 ## 1. Scope
